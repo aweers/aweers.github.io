@@ -6,6 +6,10 @@ theme = "congo"
 [params]
   # Enable KaTeX math typesetting
   math = true
+  # Add a section for Matomo
+  [params.matomo]
+    url = "https://aweers.matomo.cloud/"
+    siteId = "1"
 
 [markup.goldmark.renderer]
   # Allows HTML blocks and raw HTML
