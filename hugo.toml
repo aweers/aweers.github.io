@@ -1,0 +1,20 @@
+baseURL = 'https://aweers.github.io/'
+languageCode = 'en-us'
+title = 'aweers blog'
+theme = "congo"
+
+[params]
+  # Enable KaTeX math typesetting
+  math = true
+
+[markup.goldmark.renderer]
+  # Allows HTML blocks and raw HTML
+  unsafe = true
+
+[markup.goldmark.extensions]
+  # Enable math rendering
+  [markup.goldmark.extensions.passthrough]
+    enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+      block = [['$$', '$$']]
+      inline = [['$', '$']]

@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <div class="container">
+    <div class="prose">
+      <h1>My Blog</h1>
+    </div>
+
+    <div class="mt-8">
+      <ul class="list-none">
+
+        <li class="mb-4">
+          <a class="no-underline" href="{{ "posts/dpo-is-sft/" | relLangURL }}">
+            <h2 class="text-xl font-semibold">DPO is SFT</h2>
+            <p class="text-sm text-neutral-500 dark:text-neutral-400">September 7, 2025</p>
+            <p class="mt-2">This is a comparison of SFT with cross-entropy loss and DPO and how they behave on gradient level.</p>
+          </a>
+        </li>
+
+        </ul>
+    </div>
+  </div>
+{{ end }}
